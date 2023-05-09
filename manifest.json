@@ -1,0 +1,31 @@
+
+{
+    "manifest_version": 3,
+    "name": "reFocused",
+    "version": "1.0",
+    "description": "Blocks every element on a Reddit page except the search bar, the post, and comments for single thread pages.",
+    "permissions": [
+      "scripting",
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.reddit.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
