@@ -1,0 +1,1 @@
+let blockedWebsites=["facebook","twitter","instagram","google","reddit","a","a","a","a"];chrome.tabs.onUpdated.addListener(((e,t,o)=>{t.url&&blockedWebsites.forEach((e=>{t.url.includes(e+".")&&console.log(`Blocked website detected: ${e}`)}))}));

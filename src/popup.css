@@ -1,0 +1,28 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    width: 200px; 
+    height: 250px;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  #websiteList {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  #websiteList .websiteItem {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    word-wrap: break-word;
+  }
+  .toggleButton {
+    margin-right: 10px;
+  }
+
+  
+  
